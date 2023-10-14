@@ -1,9 +1,5 @@
 <?php
-function dump($value) {
-    echo '<pre>';
-    print_r($value);
-    echo '</pre>';
-}
+require 'functions.php';
 ?>
 <div>My name is <?= $_POST['name'] ?>. My favorite color is 
 <?php if ($_POST['gender'] == 'male'): ?>
