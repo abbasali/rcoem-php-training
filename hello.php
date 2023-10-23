@@ -8,13 +8,13 @@ $boolean = true;
 $float = 45.34;
 
 
-//$names = [
-//    'name' => 'priya',
-//    'age' => 20,
-//    'percentage' => 95.98,
-//    'localite' => true,
-//];
-//
+$names = [
+    'name' => 'priya',
+    'age' => 20,
+    'percentage' => 95.98,
+    'localite' => true,
+];
+
 //include 'hello.template.php';
 
 
