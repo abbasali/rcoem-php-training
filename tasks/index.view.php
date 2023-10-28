@@ -68,7 +68,21 @@
             </div>
             <div class="pb-4">
                 <!-- Page Content-->
-                
+                <ul>
+                    <?php foreach ($tasks as $task): ?>
+                        <li>
+                            <?php if ($task->completed): ?>
+                            <strike>
+                                <?php endif; ?>
+
+                                <?= $task->description; ?> : <?= $task->due_date; ?>
+
+                                <?php if ($task->completed): ?>
+                            </strike>
+                        <?php endif; ?>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
                 <!-- END: Page Content-->
             </div>
         </main>
