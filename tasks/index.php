@@ -1,7 +1,6 @@
 <?php
 
 require 'Task.php';
-require '../functions.php';
 
 $tasks = [
     new Task('install xamp', '2023-10-26'),
