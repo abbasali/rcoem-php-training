@@ -1,6 +1,7 @@
 <?php
 
 class Task {
+    use BuildsQuery;
     
     public int $id;
     
@@ -9,4 +10,6 @@ class Task {
     public string $due_date;
     
     public bool $completed = false;
+    
+    public $table = 'tasks';
 }

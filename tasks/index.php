@@ -1,10 +1,13 @@
 <?php
 
-require 'Task.php';
-require 'functions.php';
+require 'includes/bootstrap.php';
 
-$pdo = connectToDb();
+$tasks = Task::query()->selectAll();
 
-$tasks = selectAll($pdo, 'tasks', 'Task');
+Task::query()->create([
+    'description' => 'my desc',
+    'due_date' => '2023-10-23',
+    'completed' => 0,
+]);
 
-require 'index.view.php';
+require 'views/index.view.php';
